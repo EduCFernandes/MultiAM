@@ -1,0 +1,19 @@
+footer{
+  background-color: #e54a58;
+  height: 150px;
+  margin: 0px;
+  text-align: center;
+  color: #fff;
+}
+
+footer h2{
+  font-size: 20px;
+  margin: 0px;
+  line-height: 150px;
+}
+
+footer img{
+  position: absolute;
+  left: 20px;
+  top: 24.5px;
+}

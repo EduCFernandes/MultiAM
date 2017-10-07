@@ -1,0 +1,85 @@
+.card {
+  background: #fff;
+  border-radius: 2px;
+  margin: 15px 0px;
+  position: relative;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  cursor: pointer;
+}
+
+.card:hover{
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.card .card-image{
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  background-size: auto 100% !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline-grid;
+}
+
+.card-image{
+
+}
+
+
+.card-text{
+  width: 100%;
+  padding: 10px;
+  opacity: 9
+}
+
+.card-text h2{
+  margin: 0px 0px 20px 0px;
+  font-weight: bold;
+  font-size: 1.8em;
+  color: #009e9f;
+}
+
+.card-text h3{
+  font-size: 20px;
+  font-size: 1.4em;
+  margin: 10px 0px;
+}
+.card-text span{
+  font-size: 20px;
+}
+
+.card-text span:first-child{
+  float: left;
+}
+
+.card-text span:last-child{
+  float: right;
+  background-color: #ff3232;
+  margin-right: -10px;
+  padding-bottom: -10px;
+  padding: 5px 15px;
+  color: #fff;
+}
+
+
+.wrapper-box{
+  background-color: red;
+}
+@media (max-width: 992px) {
+  .row{
+
+    border: 2px solid red;
+  }
+}
+
+@media (max-width: 768px) {
+  .openNav .barra{
+    height: 4px;
+    width: 80}
+}
+
+@media (max-width: 992px) {
+  .card .card-image{
+    height: 300px;
+  }
+}

@@ -1,0 +1,42 @@
+.empresa{
+  width: 100%;
+}
+.empresa .wrapper{
+  text-align: center;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.empresa img{
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.empresa h1{
+  color: #b13761;
+  font-size: 40px;
+}
+
+.empresa p{
+  font-size: 28px;
+  margin: 20px 0px;
+}
+
+@media (max-width: 768px) {
+  .empresa h1{
+    font-size: 30px;
+  }
+
+  .empresa p{
+    font-size: 18px;
+  }
+
+  .empresa img{
+    width: 80%;
+  }
+}

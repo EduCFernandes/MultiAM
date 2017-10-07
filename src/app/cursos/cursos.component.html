@@ -1,0 +1,13 @@
+<div class="banner">
+  <div class="banner-text">
+    <h1>Cursos</h1>
+  </div>
+</div>
+
+<div class="row col-md-10 wrapper-box">
+  <div class="col-xs-12 col-sm-6 col-md-4" *ngFor="let curso of cursos">
+    <app-lista-cursos [cursos]="curso"></app-lista-cursos>
+  </div>
+</div>
+
+<app-footer></app-footer>
