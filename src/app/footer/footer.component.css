@@ -1,19 +1,67 @@
-footer{
-  background-color: #e54a58;
-  height: 150px;
+.wrapper-rodape{
+    position: relative;
+    max-width: 1024px;
+    margin: 0 auto;
+    clear: both;
+}
+.row{
+  width: 100%;
   margin: 0px;
-  text-align: center;
+}
+
+.rodape{
+    background: #b13761;
+    color: #fff;
+    display: block;
+    height: auto;
+    margin-top: 40px;
+}
+
+.rodape h3{
+    font-size: 2em;
+    padding: 15px 0 10px 0;
+}
+
+.rodape p{
+  font-size: 1.2em;
+  line-height: 1.5em;
   color: #fff;
+  padding: 0px 0px 20px 0px;
 }
 
-footer h2{
-  font-size: 20px;
-  margin: 0px;
-  line-height: 150px;
+.rodape a{
+    color: #fff;
 }
 
-footer img{
-  position: absolute;
-  left: 20px;
-  top: 24.5px;
+.rodape ul{
+  padding: 0px;
+  padding: 0px 0px 20px 0px;
+}
+.rodape ul li{
+    padding: 4px 0;
+    list-style: none;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+.rodape ul li:hover{
+    padding: 4px 0;
+    list-style: none;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+
+.copy{
+    padding: 10px 15px;
+    background: #2c3e50;
+    color: #fff;
+}
+
+.copy a{
+    color: #fff;
+}
+
+.copy a:hover{
+    color: #2980b9;
 }

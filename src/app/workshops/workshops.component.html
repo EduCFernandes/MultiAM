@@ -1,12 +1,14 @@
-<div class="banner">
-  <div class="banner-text">
-    <h1>Workshops</h1>
+<div class="container-fluid">
+  <div class="banner">
+    <div class="banner-text">
+      <h1>Workshops</h1>
+    </div>
   </div>
-</div>
 
-<div class="row col-md-10 wrapper-box">
-  <div class="col-xs-12 col-sm-6 col-md-4" *ngFor="let workshop of workshops">
-    <app-lista-workshops [workshops]="workshop"></app-lista-workshops>
+  <div class="row col-md-10 wrapper-box">
+    <div class="col-xs-12 col-sm-6 col-md-4" *ngFor="let workshop of workshops">
+      <app-lista-workshops [workshops]="workshop"></app-lista-workshops>
+    </div>
   </div>
 </div>
 <app-footer></app-footer>
