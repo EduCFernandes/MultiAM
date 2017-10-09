@@ -15,11 +15,15 @@ export class PrincipalComponent implements OnInit {
       $('.openNav').click(function(){
         $('.sidenav').css("width", "280px");
         $('#main').css("opacity", "0.4");
+        $('body').addClass("stop-scrolling");
+        $('body').bind('touchmove', function(e){e.preventDefault()})
       });
 
       $('.closebtn').click(function(){
         $('.sidenav').css("width", "0");
         $('#main').css("opacity", "1");
+        $('body').removeClass("stop-scrolling");
+        $('body').unbind('touchmove')
       });
   }
 }
