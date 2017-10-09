@@ -1,9 +1,9 @@
 <div class="card">
-  <div class="card-image" style="background-image: url('/assets/img/cursos/curso1.png');"></div>
+  <div class="card-image" [ngStyle]="{background: '#fff url(' + workshops.image + ') no-repeat center center'}"></div>
   <div class="card-text">
     <h2>{{workshops.nome}}</h2>
     <h3>{{workshops.data}}</h3>
-    <h3>{{workshops.vagas}}</h3>
+    <h3>{{workshops.vagas}} vagas</h3>
     <h3>{{workshops.local}}</h3>
   </div>
 </div>
