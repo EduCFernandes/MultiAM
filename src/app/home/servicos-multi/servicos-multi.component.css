@@ -2,104 +2,107 @@
   margin: 0;
 }
 
+.wrapper-servicos{
+  padding: 0px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 50px;
+}
 h1{
   text-align: center;
   margin: 60px 0px;
   color: #b13761;
   font-size: 60px;
-    font-family: 'Inconsolata', monospace!important;
+  font-family: 'Inconsolata', monospace!important;
 }
 
-.servico{
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 0px;
-  height: 100%;
-  display: block;
+.card{
   cursor: pointer;
 }
 
-.detail{
-  display: block;
-  height: 10px;
-  width: 98.7vw;
-  margin-left: -25%;
-  z-index: -10;
-  position: absolute;
-  display: none;
+
+.card .image{
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0px 20px 10px -15px rgba(0,0,0,0.4);
+  cursor: pointer;
+  transition: all ease-in-out 300ms;
 }
 
-.bg-1{background-color: #b13761;}
-.bg-2{background-color: #f6772a;}
-.bg-3{background-color: #39c3d0;}
-.bg-4{background-color: #0ea89e;}
-
-.servico-img{
-  overflow: hidden;
-  padding: 0px;
+.card .image:hover{
+  box-shadow: 0px 37px 20px -20px rgba(0,0,0,0.2);
+  transform: translate(0px, -4px) scale(1.05);
 }
 
-.servico-img img{
-  margin: 0px;
-  width: 100%;
-  z-index: 10;
+.cursos{background-image: url("../../../assets/img/cursos.png");}
+.hackathons{background-image: url("../../../assets/img/hackathons.png");}
+.palestras{background-image: url("../../../assets/img/palestras.png");}
+.workshops{background-image: url("../../../assets/img/workshops.png");}
+
+.text{
+    z-index: 1;
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    text-align: left;
+    color: #2c3e50;
+    padding: 15px;
+    margin: 15px 0;
+    float: right;
+    cursor: pointer;
+    overflow: hidden;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    text-decoration: none;
+    clear: both;
+    width: 100%;
 }
 
-.servico-img img:hover{
-  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 1.2s; /* Safari 4.0 - 8.0 */
-  -webkit-animation-iteration-count: 1; /* Safari 4.0 - 8.0 */
-  animation-name: grow;
-  animation-duration: 1.2s;
-  animation-iteration-count: 1;
-}
-
-@keyframes grow {
-    0%   {transform: scale(1, 1);}
-    100% {transform: scale(1.3, 1.3);}
-}
-
-.servico-text{
+.text:hover{
   color: #fff;
-  z-index: 10;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  text-align: center;
-  padding: 0px;
 }
 
-.servico-text-right{
-  right: 0;
-}
-.img-right{
-  float: right;
+.text:after{
+  z-index: -1;
+   position: absolute;
+   top: 0;
+   left: 0;
+   content: "";
+   display: inline-block;
+   width: 0%;
+   height: 100%;
+   -webkit-transition: .2s ease-in-out;
+   transition: .2s ease-in-out;
+   background: black;
 }
 
-.servico h2{
-  margin: 0px 0px 20px 0px;
-  font-size: 30px;
+.curso-detail:after{background: #b13761;}
+.hackathon-detail:after{background: #f6772a;}
+.palestra-detail:after{background: #39c3d0;}
+.workshop-detail:after{background: #0ea89e;}
+
+.text:hover::after{
+  width: 100%;
 }
 
-.servico p{
-  font-size: 20px;
+
+.card .curso-detail{border-left: 10px solid #b13761;}
+.card .hackathon-detail{border-left: 10px solid #f6772a;}
+.card .palestra-detail{border-left: 10px solid #39c3d0;}
+.card .workshop-detail{border-left: 10px solid #0ea89e;}
+
+.card .text h2, .card .text p{
+  font-family: 'Montserrat', sans-serif!important;
+  padding: 0px 10px;
 }
 
 
 @media (max-width: 991px) {
-  .servico{
-    margin-bottom: 40px;
-  }
-  .detail{display: none;}
-
-  .servico-text{
-    padding: 0px 0px;
-    margin-top: 0px;
-  }
-
-  .conteudo h1{
-    font-size: 25px;
+  .card{
+    margin-bottom: 50px;
   }
 }
 

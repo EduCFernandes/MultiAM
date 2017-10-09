@@ -31,3 +31,11 @@ p{
   height: 100%;
   overflow: hidden;
 }
+
+
+::selection {
+  background: #39c3d0; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #39c3d0; /* Gecko Browsers */
+}
