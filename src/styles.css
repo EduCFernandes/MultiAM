@@ -4,6 +4,9 @@ html, body{
   font-family: 'Montserrat', sans-serif!important;
 }
 
+p{
+  font-family: 'Inconsolata', monospace!important;
+}
 
 .wrapper{
   height: 100%;

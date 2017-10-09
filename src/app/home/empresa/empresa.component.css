@@ -20,8 +20,9 @@
 
 .empresa h1{
   color: #b13761;
-  font-size: 40px;
+  font-size: 60px;
   margin: 60px 0px;
+  font-family: 'Inconsolata', monospace!important;
 }
 
 .empresa p{
