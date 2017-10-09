@@ -4,6 +4,8 @@ import { NgModule } from '@angular/core';
 import {HttpModule} from '@angular/http'
 import {RouterModule} from '@angular/router'
 
+import {FormsModule} from '@angular/forms'
+
 import {ROUTES} from './app.routes'
 
 import { AppComponent } from './app.component';
@@ -23,6 +25,7 @@ import { ListaPalestrasComponent } from './palestras/lista-palestras/lista-pales
 import { ListaWorkshopsComponent } from './workshops/lista-workshops/lista-workshops.component';
 import { ContatoComponent } from './contato/contato.component';
 import { SobreComponent } from './sobre/sobre.component';
+import { FormularioComponent } from './contato/formulario/formulario.component';
 
 
 @NgModule({
@@ -43,10 +46,12 @@ import { SobreComponent } from './sobre/sobre.component';
     ListaPalestrasComponent,
     ListaWorkshopsComponent,
     ContatoComponent,
-    SobreComponent
+    SobreComponent,
+    FormularioComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     RouterModule.forRoot(ROUTES)
   ],
   providers: [],
