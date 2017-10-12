@@ -8,6 +8,7 @@ import { PalestrasComponent } from './palestras/palestras.component';
 import { WorkshopsComponent } from './workshops/workshops.component';
 import { ContatoComponent } from './contato/contato.component';
 import { SobreComponent } from './sobre/sobre.component';
+import { MsgSucessoComponent } from './msg-sucesso/msg-sucesso.component';
 
 export const ROUTES: Routes = [
   {path: '', component: HomeComponent},
@@ -17,4 +18,5 @@ export const ROUTES: Routes = [
   {path: 'workshops', component: WorkshopsComponent},
   {path: 'contato', component: ContatoComponent},
   {path: 'sobre', component: SobreComponent},
+  {path: 'sucesso', component: MsgSucessoComponent},
 ]

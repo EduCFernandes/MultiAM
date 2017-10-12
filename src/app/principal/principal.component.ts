@@ -25,5 +25,15 @@ export class PrincipalComponent implements OnInit {
         $('body').removeClass("stop-scrolling");
         $('body').unbind('touchmove')
       });
+
+      $('.selected').click(function(){
+        $('.sidenav').css("width", "0");
+        $('#main').css("opacity", "1");
+        $('body').removeClass("stop-scrolling");
+        $('body').unbind('touchmove')
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+      });
+
+
   }
 }

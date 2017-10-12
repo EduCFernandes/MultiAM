@@ -33,23 +33,6 @@
   background-color: #39c3d0;
 }
 
-.btn{
-  background-color: transparent;
-  border: 3px solid white;
-  padding: 8px 40px;
-  border-radius: 0px;
-  color: white;
-  font-size: 20px;
-  letter-spacing: 1px;
-  font-weight: 300;
-  float: right;
-  margin: 30px;
-}
-
-.btn:hover{
-  background-color: #fff;
-  color: #0ea89e;
-}
 
 .conteudo{
   position: relative;

@@ -1,0 +1,61 @@
+.container-fluid{
+  width: 100%;
+  padding: 0px;
+}
+
+
+.wrapper-sucesso{
+  background-image:url('../../assets/img/bg.png');
+  width: 100%;
+  text-align: center;
+  margin: 0px;
+  color: #fff;
+  margin-top: 80px;
+  min-height: 100vh;
+}
+
+
+.sucesso-text{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -60%);
+}
+
+.sucesso-text hr{
+  margin: 0px 0px;
+}
+
+.sucesso-text h2{
+  font-size: 70px;
+  margin: 30px 0px;
+  color: #b13761;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 30px 20px;
+}
+
+.sucesso-text h3{
+  font-size: 45px;
+  margin: 30px 0px;
+  color: #fff;
+}
+
+.btn{
+  background-color: transparent;
+  border: 3px solid #fff;
+  padding: 10px 30px;
+  font-size: 30px;
+  border-radius: 0;
+  transition: 0.5s;
+}
+
+.btn:hover{
+  background-color: #fff;
+  color: #0ea89e;
+}
+
+@media (max-width: 992px) {
+  .sucesso-text h2{font-size: 40px;}
+  .sucesso-text h3{font-size: 30px;}
+
+}

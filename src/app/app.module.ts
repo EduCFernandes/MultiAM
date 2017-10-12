@@ -26,6 +26,7 @@ import { ListaWorkshopsComponent } from './workshops/lista-workshops/lista-works
 import { ContatoComponent } from './contato/contato.component';
 import { SobreComponent } from './sobre/sobre.component';
 import { FormularioComponent } from './contato/formulario/formulario.component';
+import { MsgSucessoComponent } from './msg-sucesso/msg-sucesso.component';
 
 
 @NgModule({
@@ -47,7 +48,8 @@ import { FormularioComponent } from './contato/formulario/formulario.component';
     ListaWorkshopsComponent,
     ContatoComponent,
     SobreComponent,
-    FormularioComponent
+    FormularioComponent,
+    MsgSucessoComponent
   ],
   imports: [
     BrowserModule,

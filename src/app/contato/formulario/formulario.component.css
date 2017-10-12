@@ -44,3 +44,10 @@ input:hover, input:focus, textarea:hover, textarea:focus, select:focus, select:h
 .ng-invalid:not(form){
   border-left: 10px solid #e54a58;
 }
+
+span{
+  color: #e54a58;
+  background-color: rgba(0,0,0,0.5);
+  font-size: 17px;
+  padding: 3px 5px;
+}

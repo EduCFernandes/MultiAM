@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Forms } from '../../form';
+import {Router} from '@angular/router'
+
+declare var jQuery:any;
+declare var $:any;
 
 @Component({
   selector: 'app-formulario',
@@ -8,7 +12,7 @@ import { Forms } from '../../form';
 })
 export class FormularioComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router:Router) { }
 
   ngOnInit() {
   }
@@ -19,7 +23,38 @@ export class FormularioComponent implements OnInit {
 
   submitted = false;
 
-  onSubmit() { this.submitted = true;}
+  onSubmit() {
+
+        var cont = 0;
+
+        $("#form input").each(function(){
+          if($(this).val() == ""){
+              $(this).after(' <span>Essa informação deve ser preenchida! </span>');
+              cont++;
+          }
+        });
+
+        $("#form select").each(function(){
+          if($(this).val() == ""){
+              $(this).after(' <span>Essa informação deve ser preenchida! </span>');
+              cont++;
+          }
+        });
+
+        $("#form textarea").each(function(){
+          if($(this).val() == ""){
+              $(this).after(' <span>Essa informação deve ser preenchida! </span>');
+              cont++;
+          }
+        });
+
+        if(cont == 0){
+            this.router.navigateByUrl('/sucesso');
+            this.submitted = true;
+            $("html, body").animate({ scrollTop: 0 }, "fast");
+        }
+  }
+
 
   get diagnostic() { return JSON.stringify(this.model); }
 
