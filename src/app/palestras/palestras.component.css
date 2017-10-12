@@ -40,3 +40,10 @@
     padding: 0px;
   }
 }
+
+
+@media (max-width: 412px) {
+  .banner-text h1{
+    font-size: 40px;
+  }
+}

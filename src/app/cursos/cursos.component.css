@@ -59,3 +59,11 @@
 .card-image{
   border: 2px solid red;
 }
+
+
+
+@media (max-width: 412px) {
+  .banner-text h1{
+    font-size: 40px;
+  }
+}

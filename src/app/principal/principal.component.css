@@ -104,10 +104,10 @@ header{
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  background-image: url("/assets/img/logo-completo.png");
-  background-size: 80%;
+  background: url("/assets/img/logos.png");
+  background-position: 11px 6px;
+  background-size: 90%;
   background-repeat: no-repeat;
-  background-position: center;
 }
 
 @media (max-width: 768px) {
@@ -120,5 +120,7 @@ header{
   .logo{
     height: 80px;
     width: 150px;
+    background-size: 150px;
+    background-position: 0px 12px;
   }
 }
