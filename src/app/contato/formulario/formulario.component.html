@@ -31,6 +31,6 @@
       [(ngModel)]="model.mensagem" name="mensagem" #name="ngModel"></textarea>
   </div>
 
-  <button type="submit" [disabled]="!Forms.form.valid">Enviar</button>
-  <button type="button" (click)="novoForm(); form.reset()">Novo</button>
+  <button type="submit">Enviar</button>
+  <button type="button" (click)="novoForm();">Novo</button>
 </form>
